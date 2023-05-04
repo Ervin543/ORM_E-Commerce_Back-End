@@ -72,6 +72,8 @@ router.post('/', async (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
+    // const stringify = JSON.stringify(req.body.tagIds)
+
   try {
     const product = await Product.create(req.body);
 
